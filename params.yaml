@@ -16,19 +16,19 @@ train:
 
 model:
   name: VGG19
-  trainable: False
+  trainable: True
   train_path: data/processed/train
   test_path: data/processed/test
   image_size: [255,255]
   loss: 'categorical_crossentropy'
   optimizer: 'adam'
   metrics: ['accuracy']
-  epocha: 1
+  epochs: 1
   #batch_size: 32
   sav_dir: models/trained.h5
 
 img_augment:
-  rescale: 1./255
+  rescale: 0.00392156862
   shear_range: 0.2
   zoom_range: 0.2
   horizontal_flip: True
