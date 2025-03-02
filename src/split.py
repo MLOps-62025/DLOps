@@ -2,11 +2,7 @@ from logging import root
 import os
 import shutil
 import argparse
-import yaml
-import pandas as pd
-import numpy as np
-import random
-from get_data import get_data, read_params
+from get_data import get_data
 
 def train_and_test(config_file):
     config = get_data(config_file)
@@ -59,7 +55,7 @@ def train_and_test(config_file):
             shutil.copy(src_path, dst_path)
 
         print(f"Done copying testing data for {class_name} (saved in class_{class_id})")
- 
+
 
 if __name__=='__main__':
     args=argparse.ArgumentParser()

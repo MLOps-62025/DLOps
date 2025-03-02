@@ -1,9 +1,5 @@
 import os
-import shutil
 import argparse
-import yaml
-import pandas as pd
-import numpy as np
 from get_data import get_data, read_params
 
 ################  CREATING FOLDER - STAR ########################

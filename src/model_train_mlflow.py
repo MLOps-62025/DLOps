@@ -1,14 +1,9 @@
-import numpy as np
 from keras_preprocessing.image import ImageDataGenerator
-from keras.layers import Dense, Flatten, Conv2D, MaxPooling2D, Dropout
+from keras.layers import Dense, Flatten
 from tensorflow.keras.models import Model # type: ignore
-from glob import glob
-import os
 import argparse
-from get_data import get_data, read_params
-import matplotlib.pyplot as plt
+from get_data import get_data
 from keras.applications.vgg16 import VGG16
-import tensorflow as tf
 import warnings
 warnings.filterwarnings('ignore')
 import mlflow
