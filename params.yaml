@@ -24,7 +24,7 @@ model:
   optimizer: 'adam'
   metrics: ['accuracy']
   epochs: 1
-  #batch_size: 32
+  batch_size: 32
   sav_dir: models/trained.h5
 
 img_augment:
